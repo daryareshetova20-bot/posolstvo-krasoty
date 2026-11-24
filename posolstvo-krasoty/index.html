@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Посольство красоты | Салон красоты в Йошкар-Оле</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+       <!-- ШАПКА САЙТА -->
+    <header class="header">
+        <div class="header__container">
+            <!-- Логотип -->
+            <a href="#" class="header__logo">
+                <span class="logo__main">Посольство</span>
+                <span class="logo__sub">красоты</span>
+            </a>
+
+            <!-- Меню навигации -->
+            <nav class="header__nav" id="mainNav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#about" class="nav__link">О нас</a></li>
+                    <li class="nav__item"><a href="#services" class="nav__link">Услуги</a></li>
+                    <li class="nav__item"><a href="#team" class="nav__link">Мастера</a></li>
+                    <li class="nav__item"><a href="#reviews" class="nav__link">Отзывы</a></li>
+                    <li class="nav__item"><a href="#contacts" class="nav__link">Контакты</a></li>
+                </ul>
+            </nav>
+
+            <!-- Контакты и кнопка -->
+            <div class="header__contacts">
+                <a href="tel:+78362347387" class="header__phone">+7 (8362) 34-73-87</a>
+                <button class="btn btn--primary js-open-modal">Записаться</button>
+            </div>
+
+            <!-- Кнопка мобильного меню -->
+            <button class="burger js-burger" aria-label="Открыть меню">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- ГЛАВНЫЙ ЭКРАН  -->
+    <section class="hero">
+        <div class="hero__container">
+            <div class="hero__content">
+                <h1 class="hero__title">
+                    Естественная красота <br> и ваша уверенность
+                </h1>
+                <p class="hero__subtitle">
+                    Салон красоты «Посольство красоты» в Йошкар-Оле. Мы создаем образы, которые подчеркивают вашу индивидуальность.
+                </p>
+                <div class="hero__actions">
+                    <button class="btn btn--primary js-open-modal">Записаться на консультацию</button>
+                    <a href="#services" class="btn btn--outline">Наши услуги</a>
+                </div>
+            </div>
+            
+            <!-- Картинка -->
+            <div class="hero__image">
+                <img src="photos/team.jpg" alt="Коллектив Посольства красоты">
+            </div>
+        </div>
+    </section>
+            <!-- УСЛУГИ -->
+    <section class="services" id="services">
+        <div class="services__container">
+            <div class="services__header">
+                <h2 class="section-title">Популярные услуги</h2>
+                <p class="section-subtitle">Мы предлагаем полный спектр услуг для вашей красоты и уверенности</p>
+            </div>
+
+            <!-- 3 КАРТОЧКИ -->
+            <div class="services__grid">
+                <!-- Карточка 1 -->
+                <div class="service-card">
+                    <div class="service-card__image">
+                        <img src="photos/brows.jpg" alt="Коррекция бровей">
+                    </div>
+                    <div class="service-card__content">
+                        <h3 class="service-card__title">Коррекция бровей</h3>
+                        <p class="service-card__desc">Идеальная форма и стойкий цвет. Подчеркнем вашу естественную красоту.</p>
+                        <div class="service-card__footer">
+                            <span class="service-card__price">от 500 ₽</span>
+                            <button class="service-card__btn js-open-modal">Записаться</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Карточка 2 -->
+                <div class="service-card">
+                    <div class="service-card__image">
+                        <img src="photos/hair.jpg" alt="Парикмахерские услуги">
+                    </div>
+                    <div class="service-card__content">
+                        <h3 class="service-card__title">Парикмахерские услуги</h3>
+                        <p class="service-card__desc">Стрижки, укладки и вечерние прически от наших опытных мастеров.</p>
+                        <div class="service-card__footer">
+                            <span class="service-card__price">от 800 ₽</span>
+                            <button class="service-card__btn js-open-modal">Записаться</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Карточка 3 -->
+                <div class="service-card">
+                    <div class="service-card__image">
+                        <img src="photos/nails.jpg" alt="Маникюр">
+                    </div>
+                    <div class="service-card__content">
+                        <h3 class="service-card__title">Маникюр и педикюр</h3>
+                        <p class="service-card__desc">Ухоженные руки и стойкое покрытие. Работаем с любыми материалами.</p>
+                        <div class="service-card__footer">
+                            <span class="service-card__price">от 1000 ₽</span>
+                            <button class="service-card__btn js-open-modal">Записаться</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- СКРЫТЫЙ БЛОК -->
+            <div class="services__grid services__grid--hidden" id="extraServices">
+                <!-- Карточка 4 -->
+                <div class="service-card">
+                    <div class="service-card__image">
+                        <img src="photos/man.jpg" alt="Мужской зал">
+                    </div>
+                    <div class="service-card__content">
+                        <h3 class="service-card__title">Мужской зал</h3>
+                        <p class="service-card__desc">Стрижки, моделирование бороды и уходовые процедуры для мужчин.</p>
+                        <div class="service-card__footer">
+                            <span class="service-card__price">от 700 ₽</span>
+                            <button class="service-card__btn js-open-modal">Записаться</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Карточка 5 -->
+                <div class="service-card">
+                    <div class="service-card__image">
+                        <img src="photos/volos.jpg" alt="Окрашивание">
+                    </div>
+                    <div class="service-card__content">
+                        <h3 class="service-card__title">Окрашивание волос</h3>
+                        <p class="service-card__desc">Сложные техники, балаяж и тонирование от наших колористов.</p>
+                        <div class="service-card__footer">
+                            <span class="service-card__price">от 2500 ₽</span>
+                            <button class="service-card__btn js-open-modal">Записаться</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Карточка 6 -->
+                <div class="service-card">
+                    <div class="service-card__image">
+                        <img src="photos/chist.jpg" alt="Уход за лицом">
+                    </div>
+                    <div class="service-card__content">
+                        <h3 class="service-card__title">Уход за лицом</h3>
+                        <p class="service-card__desc">Чистки, пилинги и массаж лица для сияния вашей кожи.</p>
+                        <div class="service-card__footer">
+                            <span class="service-card__price">от 1500 ₽</span>
+                            <button class="service-card__btn js-open-modal">Записаться</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- КНОПКА "ПОКАЗАТЬ ЕЩЕ" -->
+            <div class="services__more-wrapper">
+                <button class="btn btn--outline services__more-btn" id="showMoreBtn">
+                    <span>Показать все услуги</span>
+                    <svg class="services__arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                </button>
+            </div>
+
+        </div>
+    </section>
+           <!-- СЕКЦИЯ МАСТЕРОВ -->
+    <section class="team" id="team">
+        <div class="team__container">
+            <div class="team__header">
+                <h2 class="section-title">Наши мастера</h2>
+                <p class="section-subtitle">Мы работаем, чтобы обеспечить лучший сервис и сделать наших гостей счастливыми</p>
+            </div>
+
+            <div class="team__carousel-wrapper">
+                <div class="team__track" id="teamTrack">
+                    
+                    <!-- Карточка 1 -->
+                    <div class="master-card">
+                        <div class="master-card__image">
+                            <img src="photos/master1.jpg" alt="Мастер Лилия" class="js-master-img">
+                        </div>
+                        <div class="master-card__content">
+                            <h3 class="master-card__name">Лилия</h3>
+                            <p class="master-card__role">Парикмахер-стилист</p>
+                            <p class="master-card__exp">Опыт: 8 лет</p>
+                            <button class="btn btn--outline btn--small js-open-modal">Записаться</button>
+                        </div>
+                    </div>
+
+                    <!-- Карточка 2 -->
+                    <div class="master-card">
+                        <div class="master-card__image">
+                            <img src="photos/master2.jpg" alt="Мастер Елена" class="js-master-img">
+                        </div>
+                        <div class="master-card__content">
+                            <h3 class="master-card__name">Елена</h3>
+                            <p class="master-card__role">Мастер по бровям</p>
+                            <p class="master-card__exp">Опыт: 5 лет</p>
+                            <button class="btn btn--outline btn--small js-open-modal">Записаться</button>
+                        </div>
+                    </div>
+
+                    <!-- Карточка 3 -->
+                    <div class="master-card">
+                        <div class="master-card__image">
+                            <img src="photos/master3.jpg" alt="Мастер Ульяна" class="js-master-img">
+                        </div>
+                        <div class="master-card__content">
+                            <h3 class="master-card__name">Ульяна</h3>
+                            <p class="master-card__role">Мастер маникюра</p>
+                            <p class="master-card__exp">Опыт: 6 лет</p>
+                            <button class="btn btn--outline btn--small js-open-modal">Записаться</button>
+                        </div>
+                    </div>
+                <!-- Карточка 5 -->
+                <div class="master-card">
+                    <div class="master-card__image">
+                        <img src="photos/master4.jpg" alt="Мастер Ольга">
+                    </div>
+                    <div class="master-card__content">
+                        <h3 class="master-card__name">Ольга</h3>
+                        <p class="master-card__role">Косметолог</p>
+                        <p class="master-card__exp">Опыт: 10 лет</p>
+                        <button class="btn btn--outline btn--small js-open-modal">Записаться</button>
+                    </div>
+                </div>
+
+                <!-- Карточка 6 -->
+                <div class="master-card">
+                    <div class="master-card__image">
+                        <img src="photos/master5.jpg" alt="Мастер Дарья">
+                    </div>
+                    <div class="master-card__content">
+                        <h3 class="master-card__name">Дарья</h3>
+                        <p class="master-card__role">Парикмахер-стилист</p>
+                        <p class="master-card__exp">Опыт: 4 года</p>
+                        <button class="btn btn--outline btn--small js-open-modal">Записаться</button>
+                    </div>
+                </div>
+                </div>
+            </div>
+
+            <!-- Кнопки управления каруселью -->
+            <div class="team__controls">
+                <button class="team__arrow" id="teamPrev">&#8592;</button>
+                <button class="team__arrow" id="teamNext">&#8594;</button>
+            </div>
+        </div>
+    </section>
+           <!-- СЕКЦИЯ ОТЗЫВОВ -->
+    <section class="reviews" id="reviews">
+        <div class="reviews__container">
+            <div class="services__header">
+                <h2 class="section-title">Что говорят наши клиенты</h2>
+                <p class="section-subtitle">Более 15 000 довольных гостей</p>
+            </div>
+
+            <div class="reviews__list">
+                
+                <!-- Отзыв 1 -->
+                <div class="review-row">
+                    <div class="review-row__avatar">АК</div>
+                    <div class="review-row__content">
+                        <div class="review-row__top">
+                            <strong class="review-row__name">Анна Калашникова</strong>
+                            <span class="review-row__stars">★★★★★</span>
+                        </div>
+                        <p class="review-row__text">
+                            "Сегодня побывала на стрижке у Лилии. Около года ничего не делала с волосами, идеи не было. Сегодня Лилия помогла подобрать образ. Все прошло комфортно, быстро и аккуратно!"
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Отзыв 2 -->
+                <div class="review-row">
+                    <div class="review-row__avatar">КС</div>
+                    <div class="review-row__content">
+                        <div class="review-row__top">
+                            <strong class="review-row__name">Ксения</strong>
+                            <span class="review-row__stars">★★★★★</span>
+                        </div>
+                        <p class="review-row__text">
+                            "Уже 11 лет хожу в это место! Потрясающий персонал, качественная работа с клиентом. Спасибо большое Наталье Леонидовне! С каким бы состоянием волос я не пришла, всегда выхожу с конфеткой!"
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Отзыв 3 -->
+                <div class="review-row">
+                    <div class="review-row__avatar">СВ</div>
+                    <div class="review-row__content">
+                        <div class="review-row__top">
+                            <strong class="review-row__name">Саяна Вохидова</strong>
+                            <span class="review-row__stars">★★★★★</span>
+                        </div>
+                        <p class="review-row__text">
+                            "Делала коррекцию бровей! Все как и всегда на высоте ❤️❤️❤️ Обожаю этот салон и мастеров, которые здесь работают!"
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+           <!-- ФОРМА ЗАПИСИ -->
+    <div class="modal" id="bookingModal">
+        <div class="modal__overlay js-close-modal"></div>
+        <div class="modal__window">
+            <button class="modal__close js-close-modal">&times;</button>
+            
+            <!-- Заголовок-->
+            <h2 class="modal__title" id="modalTitle">Записаться в салон</h2>
+            <p class="modal__subtitle" id="modalSubtitle">Оставьте свои данные, и мы свяжемся с вами в ближайшее время!</p>
+            
+            <form class="modal__form" id="bookingForm">
+                <div class="form-group">
+                    <label for="userName">Ваше имя</label>
+                    <input type="text" id="userName" class="form-control" placeholder="Например, Анна" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="userPhone">Телефон</label>
+                    <input type="tel" id="userPhone" class="form-control js-phone" placeholder="+7 (___) ___-__-__" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="userService">Какая услуга интересует?</label>
+                    <select id="userService" class="form-control">
+                        <option value="Стрижка">Стрижка и укладка</option>
+                        <option value="Окрашивание">Окрашивание волос</option>
+                        <option value="Брови">Коррекция бровей</option>
+                        <option value="Ногти">Маникюр / Педикюр</option>
+                        <option value="Другое">Другое / Не знаю</option>
+                    </select>
+                </div>
+
+                <button type="submit" class="btn btn--primary btn--full">Отправить заявку</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Подключаем скрипты -->
+    <script src="js/app.js"></script>
+    <footer class="footer" id="contacts">
+        <div class="footer__container">
+            
+            <div class="footer__top">
+                <div class="footer__info">
+                    <a href="#" class="footer__logo">
+                        <span class="logo__main">Посольство</span>
+                        <span class="logo__sub">красоты</span>
+                    </a>
+                    
+                    <ul class="footer__contacts-list">
+                        <li>
+                            <div>
+                                <strong>Адрес:</strong>
+                                <p>г. Йошкар-Ола, ул. Ленинский проспект, 21</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <strong>Телефон:</strong>
+                                <p><a href="tel:+78362347387">+7 (8362) 34-73-87</a></p>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <strong>Режим работы:</strong>
+                                <p>Ежедневно с 09:00 до 21:00</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer__map">
+                    <iframe src="https://yandex.ru/map-widget/v1/?text=Йошкар-Ола%20Ленинский%20проспект%2021&z=16" width="100%" height="100%" frameborder="0" allowfullscreen="true" style="border-radius: 15px;"></iframe>
+                </div>
+            </div>
+
+            <div class="footer__bottom">
+                <p>&copy; 2026 Салон красоты «Посольство красоты». Все права защищены.</p>
+                <p><a href="#">Политика конфиденциальности</a></p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
